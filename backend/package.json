@@ -1,0 +1,42 @@
+{
+  "name": "hyprtask",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
+  },
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "dev:client": "bun --cwd client dev",
+    "dev:all": "bun run dev & bun run dev:client",
+    "migrations": "bun run scripts/run-migrations.ts",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write",
+    "format": "biome format --write ."
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/pg": "^8.16.0",
+    "bcrypt": "^6.0.0",
+    "biome": "^0.3.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.18.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "uuid": "^13.0.0",
+    "zod": "^4.3.6"
+  }
+}

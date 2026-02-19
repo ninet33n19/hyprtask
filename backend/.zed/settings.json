@@ -1,0 +1,13 @@
+{
+  "project_name": "hyprtask",
+  "languages": {
+    "SQL": {
+      "formatter": {
+        "external": {
+          "command": "sql-formatter",
+          "arguments": ["--language", "postgresql"],
+        },
+      },
+    },
+  },
+}
